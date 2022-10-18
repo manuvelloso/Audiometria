@@ -8,6 +8,7 @@
 int N_tmr1=0;
 int contador_tmr0=0;
 int nueva_frec=0;
+int terminarMenu=0;
 /*typedef enum {F125=125, F250=250, F500=500, F750=750, F1K=1000,F1K5=1500,F2K=2000,F3K=3000, F4K=4000,F6K=6000,F8K=8000} F;*/
 //F Frecuencia=125;
 int FrecuenciasARegistrar[12]={125,250,500,750,1000,1500,2000,3000,4000,6000,8000};
@@ -15,15 +16,10 @@ int Frecuencia=FrecuenciasARegistrar[0];
 
 
 void Menu();
-
-// seteo de la senal segun la frecuencia
-void Seteo_Senal();
-
-//inicializacion de timers
-void Enviar_Senal();
-
-//Datos a la eeprom
-void Finalizar();
+void Seteo_Senal();  // seteo de la senal segun la frecuencia
+void Enviar_Senal(); //inicializacion de timers
+void Finalizar(); //Datos a la eeprom
+void Comunicar();
 
 
 //Esta interrupcion la utilizamos para generar la senal cuadrada en el pin B7
@@ -32,6 +28,15 @@ void TIMER1_isr()
 {
    output_toggle(PIN_B7);
    set_timer1(N_tmr1);
+}
+
+// aca hay que poner una variable para que se interrumpa con el boton de rb4 a rb7
+#int_RB
+void RB_isr()
+{
+  
+  terminarMenu=1;
+  
 }
 
 //Esta interrupcion la utilizamos para registrar el PULSADO al presionar el boton en RB0
@@ -91,6 +96,8 @@ void main()
    
    Finalizar();
    
+   Comunicar();
+   
 }
 
 
@@ -101,7 +108,7 @@ void Menu()
    signed char x0= 16;
    signed char x3=16;
    
-   while(TRUE) // aca hay que poner una variable para que se interrumpa con el boton de rb4 a rb7
+   while(!terminarMenu)
    {
      if(x0>=-24)
      {
@@ -188,3 +195,4 @@ void Finalizar()
    // DATOS A LA EEPROM
 }
 
+void Comunicar(){}
