@@ -9,23 +9,13 @@
 int N_tmr1=0;
 int contador_tmr0=0;
 int nueva_frec=0;
-
-int FrecuenciasARegistrar[12]={125,250,500,750,1000,1500,2000,3000,4000,6000,8000};
 int Frecuencia=FrecuenciasARegistrar[0];
 
-
-void Menu();
-void Seteo_Senal();  // seteo de la senal segun la frecuencia
-void Enviar_Senal(); //inicializacion de timers
-void Finalizar(); //Datos a la eeprom
-void Comunicar();
-
-
-//Esta interrupcion la utilizamos para generar la senal cuadrada en el pin B7
+//Esta interrupcion la utilizamos para generar la senal cuadrada en el pin A7
 #int_TIMER1
 void TIMER1_isr()
 {
-   output_toggle(PIN_B7);
+   output_toggle(PIN_A7);
    set_timer1(N_tmr1);
 }
 
@@ -58,10 +48,9 @@ void main()
    setup_timer_0(RTCC_INTERNAL|RTCC_DIV_256);
    setup_timer_1(RTCC_INTERNAL|RTCC_DIV_256);
    
- setup_adc_ports(ALL_ANALOG);
-setup_adc(ADC_CLOCK_INTERNAL);
    
    TRISB=0x04;
+   TRISA=0x40;
    
    lcd_init();
    int i=0;
