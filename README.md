@@ -6,3 +6,5 @@ PIC 16F1827
 - LCD
 - Comunicacion Serie: paquete de datos a PC + display gráfico
 - Conversor A/D
+
+En la carpeta de cada una estan los archivos individuales. El conjunot se encuentra en PROYECTO FINAL EDII, en donde está todo modulado y bonito :) <3
