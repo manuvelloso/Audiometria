@@ -1,0 +1,6 @@
+Compiling M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom on 20-Oct-22 at 15:44
+>>> Warning 230 "M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom.c" Line 38(1,1): String truncated
+>>> Warning 202 "M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom.c" Line 28(8,14): Variable never used:   cadena
+      Memory usage:   ROM=22%      RAM=19% - 27%
+      0 Errors,  2 Warnings.
+Build Successful.

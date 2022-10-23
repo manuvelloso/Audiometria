@@ -1,0 +1,61 @@
+[PROJECT]
+Target=PC_receptor.hex
+Processor_Text=PIC16F1827
+CCSVerions=5.093
+Compiler=PCM
+CCSVersion=5.093
+[Target Data]
+FileList=PC_receptor.c
+[Directories]
+Include=
+[M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\PC_receptor]
+Type=4
+[mru-list]
+1=PC_receptor.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=2
+D1=18-10-2022
+D1_L=6
+D1_L1=[51220]Project Opened.
+D1_L2=[51851]Started Editing.
+D1_L3=[52529]Stopped Editing.
+D1_L4=[52981]Started Editing.
+D1_L5=[53281]Stopped Editing.
+TotalEdit=21
+TotalDebug=0
+D1_E=7
+D1_D=0
+D1_L6=[53463]Project Closed.
+D2=20-10-2022
+D2_L=8
+D2_L1=[44239]Project Opened.
+D2_L2=[44239]Project Closed.
+D2_L3=[44240]Project Opened.
+D2_L4=[44484]Started Editing.
+D2_L5=[44785]Stopped Editing.
+D2_L6=[50001]Started Editing.
+D2_L7=[51088]Stopped Editing.
+D2_E=14
+D2_D=0
+D2_L8=[51979]Project Closed.
+
+[Opened Files]
+1=Comunicacion.h
+t1=1
+2=Comunicacion.c
+t2=1
+3=PC_receptor.h
+t3=1
+Count=3
+[PC_receptor.c]
+Type=4
+
+[defines]
+buildcount=10
+[Units]
+Count=1
+1=PC_receptor (main)

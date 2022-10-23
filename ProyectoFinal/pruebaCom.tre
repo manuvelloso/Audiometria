@@ -1,0 +1,61 @@
+ÀÄpruebaCom
+   ÀÄmain  0/138  Ram=14
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄtransmitirDatos  0/404  Ram=16
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ³  ÀÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PSTRINGR_721  (Inline)  Ram=3
+      ³  ³  ÀÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÃÄ@DIV88  0/23  Ram=3
+      ³  ³  ÃÄ@DIV88  0/23  Ram=3
+      ³  ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ³  ÀÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PUTCHAR_1_  0/37  Ram=1
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄ@PRINTF_D_721  0/105  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄ@PSTRINGCN7_721  0/84  Ram=6
+      ³     ÀÄ*
+      ÀÄ@delay_ms1  0/23  Ram=1

@@ -1,0 +1,46 @@
+
+ROM used:   13/4096 (0%)
+            13/4096 (0%) including unused fragments
+
+            0.0 Average locations per line
+            6.5 Average locations per statement
+
+RAM used:   4/383 (1%) at main() level
+            15/383 (4%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   14     2 100  PC_receptor.c
+    5     0   0  PC_receptor.h
+  965     0   0  C:\Program Files (x86)\PICC\Devices\16F1827.h
+----- -----
+  984     2 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     10  77    0     14  0.8  main
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               1
+    Statements              2
+    Comments                160
+    Volume (V)              16
+    Difficulty (D)          0.5
+    Effort to implement (E) 8
+    Time to implement (T)   0 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    179
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF    10  2035  
+00800-00FFF     0  2048  
+
+
+

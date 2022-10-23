@@ -1,0 +1,49 @@
+[PROJECT]
+Target=pruebaCom.hex
+Processor_Text=PIC16F1827
+CCSVerions=5.093
+Compiler=PCM
+CCSVersion=5.093
+[Target Data]
+FileList=pruebaCom.c
+[Directories]
+Include=
+[M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom]
+Type=4
+[mru-list]
+1=pruebaCom.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=20-10-2022
+D1_L=8
+D1_L1=[51979]Project Opened.
+D1_L2=[51989]Started Editing.
+D1_L3=[52344]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D1_E=11
+D1_D=0
+D1_L4=[52344]Project Closed.
+D1_L5=[56404]Project Opened.
+D1_L6=[56419]Started Editing.
+D1_L7=[56716]Stopped Editing.
+D1_L8=[56716]Project Closed.
+
+[Opened Files]
+1=pruebaCom.c
+t1=38
+2=Comunicacion.c
+t2=36
+Count=2
+[pruebaCom.c]
+Type=4
+
+[defines]
+buildcount=4
+[Units]
+Count=1
+1=pruebaCom (main)

@@ -1,0 +1,24 @@
+//#include <pruebaCom.h>
+#include <16f1827.h>
+#use delay(internal=4M)
+#use RS232(BAUD=4800, XMIT=PIN_B5, parity=N)
+
+ char* cadena="edi2";
+
+void main()
+{
+
+
+  
+   
+   while(TRUE)
+   {
+      
+       printf("Hola %s",cadena);
+       delay_ms(20);
+      
+
+      //TODO: User Code
+   }
+
+}

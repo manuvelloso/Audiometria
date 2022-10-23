@@ -1,0 +1,69 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PACKED_MEMORY.P2
+004-005 @READ_PROGRAM_MEMORY8.P3
+004-005 @WRITE_PACKED_MEMORY.P4
+006-007 @WRITE_PACKED_MEMORY.P1
+006-007 @READ_PACKED_MEMORY.P2
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+111.6   C1OUT
+113.6   C2OUT
+191-192 @READ_PROGRAM_MEMORY8.P1
+191-192 @WRITE_PROGRAM_MEMORY8.P2
+291     CCP_1_LOW
+291     CCP_1
+292     CCP_1_HIGH
+298     CCP_2_LOW
+298     CCP_2
+299     CCP_2_HIGH
+311     CCP_3
+311     CCP_3_LOW
+312     CCP_3_HIGH
+318     CCP_4
+318     CCP_4_LOW
+319     CCP_4_HIGH
+
+ROM Allocation:
+000003  @cinit1
+000003  main
+00000B  @cinit2
+
+Project Directory:
+    M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\
+
+Project Files:
+    PC_receptor.c                                           [18-Oct-22 14:13  CRC=00000000]
+    PC_receptor.h                                           [18-Oct-22 14:27  CRC=00000000]
+    C:\Program Files (x86)\PICC\Devices\16F1827.h           [21-Feb-20 15:48  CRC=D6A5AF9F]
+
+Source signature=AD4B5F3E
+Program memory checksum=0000
+Hex file CRC=86CA
+
+Units:
+    M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\PC_receptor (main)
+
+Compiler Settings:
+    Processor:      PIC16F1827
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   PC_receptor.xsym
+    Errors:      PC_receptor.err
+    Ext Symbols: PC_receptor.esym
+    INHX8:       PC_receptor.hex
+    Symbols:     PC_receptor.sym
+    List:        PC_receptor.lst
+    Debug/COFF:  PC_receptor.cof
+    Project:     PC_receptor.ccspjt
+    Call Tree:   PC_receptor.tre
+    Statistics:  PC_receptor.STA

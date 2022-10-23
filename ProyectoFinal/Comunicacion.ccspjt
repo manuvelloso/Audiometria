@@ -1,0 +1,49 @@
+[PROJECT]
+Target=Comunicacion.hex
+Processor_Text=PIC16F1827
+CCSVerions=5.093
+Compiler=PCM
+CCSVersion=5.093
+[Target Data]
+FileList=Comunicacion.c
+[Directories]
+Include=
+[M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\Comunicacion]
+Type=4
+[mru-list]
+1=Comunicacion.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=18-10-2022
+D1_L=10
+D1_L1=[47673]Project Opened.
+D1_L2=[47684]Started Editing.
+D1_L3=[47929]Stopped Editing.
+TotalEdit=39
+TotalDebug=0
+D1_E=39
+D1_D=0
+D1_L4=[47929]Project Closed.
+D1_L5=[47944]Project Opened.
+D1_L6=[47948]Started Editing.
+D1_L7=[48722]Stopped Editing.
+D1_L8=[48944]Started Editing.
+D1_L9=[50773]Stopped Editing.
+D1_L10=[51220]Project Closed.
+
+[Opened Files]
+1=Comunicacion.c
+t1=39
+Count=1
+[Comunicacion.c]
+Type=4
+[Units]
+Count=1
+1=Comunicacion (main)
+
+[defines]
+buildcount=1

@@ -1,0 +1,1015 @@
+CCS PCM C Compiler, Version 5.093, 4770               20-Oct-22 15:44
+
+               Filename:   M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom.lst
+
+               ROM used:   902 words (22%)
+                           Largest free fragment is 2048
+               RAM used:   71 (19%) at main() level
+                           105 (27%) worst case
+               Stack used: 2 locations
+               Stack size: 16
+
+0000:  MOVLP  00
+0001:  GOTO   2FC
+0002:  NOP
+.................... //#include <pruebaCom.h>
+.................... #include <16f1827.h>
+.................... //////////// Standard Header file for the PIC16F1827 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC16F1827
+0003:  DATA CE,37
+0004:  DATA 6D,31
+0005:  DATA F2,32
+0006:  DATA 3A,10
+0007:  DATA A5,39
+0008:  DATA A0,29
+0009:  DATA 65,3C
+000A:  DATA 6F,1D
+000B:  DATA A0,12
+000C:  DATA 63,10
+000D:  DATA C6,32
+000E:  DATA 63,34
+000F:  DATA 61,10
+0010:  DATA E4,32
+0011:  DATA 20,37
+0012:  DATA E1,31
+0013:  DATA E9,36
+0014:  DATA E9,32
+0015:  DATA 6E,3A
+0016:  DATA 6F,1D
+0017:  DATA A0,12
+0018:  DATA E4,17
+0019:  DATA 25,32
+001A:  DATA AF,12
+001B:  DATA 64,10
+001C:  DATA A0,22
+001D:  DATA E4,30
+001E:  DATA 64,1D
+001F:  DATA A0,12
+0020:  DATA 64,00
+0021:  DATA CC,34
+0022:  DATA 73,3A
+0023:  DATA 65,37
+0024:  DATA 69,37
+0025:  DATA 67,1D
+0026:  DATA A0,12
+0027:  DATA 64,16
+0028:  DATA 20,23
+0029:  DATA F2,32
+002A:  DATA E3,3A
+002B:  DATA 65,37
+002C:  DATA E3,34
+002D:  DATA 61,1D
+002E:  DATA A0,12
+002F:  DATA 64,16
+0030:  DATA 20,32
+0031:  DATA 42,1D
+0032:  DATA A0,12
+0033:  DATA 64,16
+0034:  DATA A0,37
+0035:  DATA F2,32
+0036:  DATA EA,30
+0037:  DATA 3A,10
+0038:  DATA E4,32
+0039:  DATA F2,32
+003A:  DATA 63,34
+003B:  DATA 61,00
+003C:  DATA CC,34
+003D:  DATA 73,3A
+003E:  DATA 65,37
+003F:  DATA 69,37
+0040:  DATA 67,1D
+0041:  DATA A0,12
+0042:  DATA 64,16
+0043:  DATA 20,23
+0044:  DATA F2,32
+0045:  DATA E3,3A
+0046:  DATA 65,37
+0047:  DATA E3,34
+0048:  DATA 61,1D
+0049:  DATA A0,12
+004A:  DATA 64,16
+004B:  DATA 20,32
+004C:  DATA 42,1D
+004D:  DATA A0,12
+004E:  DATA 64,16
+004F:  DATA A0,37
+0050:  DATA F2,32
+0051:  DATA EA,30
+0052:  DATA 3A,10
+0053:  DATA 69,3D
+0054:  DATA F1,3A
+0055:  DATA E9,32
+0056:  DATA 72,32
+0057:  DATA 61,00
+*
+007D:  MOVF   0B,W
+007E:  BCF    0B.7
+007F:  MOVLB  03
+0080:  BSF    15.7
+0081:  BSF    15.0
+0082:  NOP
+0083:  NOP
+0084:  BTFSC  09.7
+0085:  BSF    0B.7
+0086:  BTFSC  03.0
+0087:  GOTO   0B0
+0088:  MOVF   13,W
+0089:  ANDLW  7F
+008A:  MOVLB  01
+008B:  MOVWF  22
+008C:  MOVLB  03
+008D:  MOVF   11,W
+008E:  MOVLB  01
+008F:  MOVWF  23
+0090:  MOVLB  03
+0091:  MOVF   12,W
+0092:  MOVLB  01
+0093:  MOVWF  24
+0094:  MOVF   22,W
+0095:  MOVWF  28
+0096:  MOVLB  00
+0097:  CALL   058
+0098:  MOVLB  01
+0099:  MOVF   23,W
+009A:  MOVLB  03
+009B:  MOVWF  11
+009C:  MOVLB  01
+009D:  MOVF   24,W
+009E:  MOVLB  03
+009F:  MOVWF  12
+00A0:  MOVF   0B,W
+00A1:  BCF    0B.7
+00A2:  BSF    15.7
+00A3:  BSF    15.0
+00A4:  NOP
+00A5:  NOP
+00A6:  BTFSC  09.7
+00A7:  BSF    0B.7
+00A8:  MOVLB  00
+00A9:  DECFSZ 6F,F
+00AA:  GOTO   0AC
+00AB:  GOTO   0AE
+00AC:  MOVLB  03
+00AD:  GOTO   0B0
+00AE:  GOTO   0D0
+00AF:  MOVLB  03
+00B0:  RLF    13,W
+00B1:  RLF    14,W
+00B2:  ANDLW  7F
+00B3:  MOVLB  01
+00B4:  MOVWF  22
+00B5:  MOVLB  03
+00B6:  MOVF   11,W
+00B7:  MOVLB  01
+00B8:  MOVWF  23
+00B9:  MOVLB  03
+00BA:  MOVF   12,W
+00BB:  MOVLB  01
+00BC:  MOVWF  24
+00BD:  MOVF   22,W
+00BE:  MOVWF  28
+00BF:  MOVLB  00
+00C0:  CALL   058
+00C1:  MOVLB  01
+00C2:  MOVF   23,W
+00C3:  MOVLB  03
+00C4:  MOVWF  11
+00C5:  MOVLB  01
+00C6:  MOVF   24,W
+00C7:  MOVLB  03
+00C8:  MOVWF  12
+00C9:  INCF   11,F
+00CA:  BTFSC  03.2
+00CB:  INCF   12,F
+00CC:  BCF    03.0
+00CD:  MOVLB  00
+00CE:  DECFSZ 6F,F
+00CF:  GOTO   07D
+00D0:  RETURN
+00D1:  MOVLB  01
+00D2:  MOVF   29,W
+00D3:  CLRF   78
+00D4:  SUBWF  28,W
+00D5:  BTFSC  03.0
+00D6:  GOTO   0DA
+00D7:  MOVF   28,W
+00D8:  MOVWF  77
+00D9:  GOTO   0E6
+00DA:  CLRF   77
+00DB:  MOVLW  08
+00DC:  MOVWF  2A
+00DD:  RLF    28,F
+00DE:  RLF    77,F
+00DF:  MOVF   29,W
+00E0:  SUBWF  77,W
+00E1:  BTFSC  03.0
+00E2:  MOVWF  77
+00E3:  RLF    78,F
+00E4:  DECFSZ 2A,F
+00E5:  GOTO   0DD
+00E6:  MOVLB  00
+00E7:  RETURN
+00E8:  MOVLW  20
+00E9:  MOVLB  01
+00EA:  BTFSS  20.4
+00EB:  MOVLW  30
+00EC:  MOVWF  24
+00ED:  MOVLB  00
+00EE:  MOVF   6F,W
+00EF:  MOVWF  77
+00F0:  BTFSS  6F.7
+00F1:  GOTO   0FC
+00F2:  COMF   77,F
+00F3:  INCF   77,F
+00F4:  MOVF   77,W
+00F5:  MOVWF  6F
+00F6:  MOVLW  2D
+00F7:  MOVLB  01
+00F8:  MOVWF  24
+00F9:  BSF    20.7
+00FA:  BSF    20.0
+00FB:  MOVLB  00
+00FC:  MOVF   6F,W
+00FD:  MOVLB  01
+00FE:  MOVWF  28
+00FF:  MOVLW  64
+0100:  MOVWF  29
+0101:  MOVLB  00
+0102:  CALL   0D1
+0103:  MOVF   77,W
+0104:  MOVWF  6F
+0105:  MOVLW  30
+0106:  ADDWF  78,W
+0107:  MOVLB  01
+0108:  MOVWF  25
+0109:  MOVLB  00
+010A:  MOVF   6F,W
+010B:  MOVLB  01
+010C:  MOVWF  28
+010D:  MOVLW  0A
+010E:  MOVWF  29
+010F:  MOVLB  00
+0110:  CALL   0D1
+0111:  MOVLW  30
+0112:  ADDWF  77,W
+0113:  MOVLB  01
+0114:  MOVWF  27
+0115:  MOVLW  30
+0116:  ADDWF  78,W
+0117:  MOVWF  26
+0118:  MOVF   24,W
+0119:  MOVWF  77
+011A:  MOVLW  30
+011B:  SUBWF  25,W
+011C:  BTFSC  03.2
+011D:  GOTO   122
+011E:  BSF    20.1
+011F:  BTFSC  20.7
+0120:  BSF    20.2
+0121:  GOTO   136
+0122:  MOVF   24,W
+0123:  MOVWF  25
+0124:  MOVLW  20
+0125:  MOVWF  24
+0126:  MOVLW  30
+0127:  SUBWF  26,W
+0128:  BTFSC  03.2
+0129:  GOTO   12E
+012A:  BSF    20.0
+012B:  BTFSC  20.7
+012C:  BSF    20.1
+012D:  GOTO   136
+012E:  BTFSS  03.2
+012F:  BSF    20.0
+0130:  BTFSS  03.2
+0131:  GOTO   136
+0132:  MOVF   25,W
+0133:  MOVWF  26
+0134:  MOVLW  20
+0135:  MOVWF  25
+0136:  BTFSC  20.2
+0137:  GOTO   13D
+0138:  BTFSC  20.1
+0139:  GOTO   142
+013A:  BTFSC  20.0
+013B:  GOTO   147
+013C:  GOTO   14C
+013D:  MOVF   24,W
+013E:  MOVWF  28
+013F:  MOVLB  00
+0140:  CALL   058
+0141:  MOVLB  01
+0142:  MOVF   25,W
+0143:  MOVWF  28
+0144:  MOVLB  00
+0145:  CALL   058
+0146:  MOVLB  01
+0147:  MOVF   26,W
+0148:  MOVWF  28
+0149:  MOVLB  00
+014A:  CALL   058
+014B:  MOVLB  01
+014C:  MOVF   27,W
+014D:  MOVWF  28
+014E:  MOVLB  00
+014F:  CALL   058
+0150:  RETURN
+*
+0166:  MOVF   00,F
+0167:  BTFSC  03.2
+0168:  GOTO   178
+0169:  MOVF   05,W
+016A:  MOVWF  6D
+016B:  MOVF   04,W
+016C:  MOVWF  6C
+016D:  MOVF   00,W
+016E:  MOVLB  01
+016F:  MOVWF  28
+0170:  MOVLB  00
+0171:  CALL   058
+0172:  MOVF   6D,W
+0173:  MOVWF  05
+0174:  MOVF   6C,W
+0175:  MOVWF  04
+0176:  ADDFSR 01,FSR0
+0177:  GOTO   166
+.................... 
+.................... #list
+.................... 
+.................... #use delay(internal=4M)
+*
+02E5:  MOVLW  20
+02E6:  MOVWF  05
+02E7:  MOVLW  40
+02E8:  MOVWF  04
+02E9:  MOVF   00,W
+02EA:  BTFSC  03.2
+02EB:  GOTO   2FA
+02EC:  MOVLW  01
+02ED:  MOVWF  78
+02EE:  CLRF   77
+02EF:  DECFSZ 77,F
+02F0:  GOTO   2EF
+02F1:  DECFSZ 78,F
+02F2:  GOTO   2EE
+02F3:  MOVLW  4A
+02F4:  MOVWF  77
+02F5:  DECFSZ 77,F
+02F6:  GOTO   2F5
+02F7:  GOTO   2F8
+02F8:  DECFSZ 00,F
+02F9:  GOTO   2EC
+02FA:  MOVLP  00
+02FB:  GOTO   384 (RETURN)
+.................... #use RS232(BAUD=4800, XMIT=PIN_B5, parity=N)
+*
+0058:  MOVLB  01
+0059:  BCF    0D.5
+005A:  MOVLB  02
+005B:  BCF    0D.5
+005C:  MOVLW  08
+005D:  MOVWF  78
+005E:  GOTO   05F
+005F:  NOP
+0060:  BSF    78.7
+0061:  GOTO   072
+0062:  BCF    78.7
+0063:  MOVLB  01
+0064:  RRF    28,F
+0065:  MOVLB  02
+0066:  BTFSC  03.0
+0067:  BSF    0D.5
+0068:  BTFSS  03.0
+0069:  BCF    0D.5
+006A:  BSF    78.6
+006B:  GOTO   072
+006C:  BCF    78.6
+006D:  DECFSZ 78,F
+006E:  GOTO   063
+006F:  GOTO   070
+0070:  NOP
+0071:  BSF    0D.5
+0072:  MOVLW  3E
+0073:  MOVWF  04
+0074:  DECFSZ 04,F
+0075:  GOTO   074
+0076:  GOTO   077
+0077:  BTFSC  78.7
+0078:  GOTO   062
+0079:  BTFSC  78.6
+007A:  GOTO   06C
+007B:  MOVLB  00
+007C:  RETURN
+.................... 
+.................... typedef struct fecha{
+....................    int dia;
+....................    int mes;
+....................    int ano;
+....................    }Fecha;
+.................... 
+.................... typedef struct paciente{
+....................    char* nombre;
+....................    char sexo;//f: femenino m:masculino
+....................    int edad;
+....................    Fecha fNac;  
+.................... }Paciente;
+.................... 
+.................... typedef struct data{
+....................    
+....................    int listening;//1 si está escuchando  
+....................    int freq;   
+....................    int dB;   
+....................    int ear; //1 derecho
+.................... }sData;   
+.................... 
+.................... 
+....................  char* cadena="edi2";
+....................    sData paquete[11];
+....................    
+....................    
+.................... void transmitirDatos(sData* datos, Paciente pac);
+.................... 
+.................... void main()
+*
+02FC:  MOVLW  6A
+02FD:  MOVLB  01
+02FE:  MOVWF  19
+02FF:  BCF    0D.5
+0300:  MOVLB  02
+0301:  BSF    0D.5
+0302:  MOVLB  00
+0303:  CLRF   55
+0304:  CLRF   54
+0305:  MOVLB  03
+0306:  CLRF   0C
+0307:  CLRF   0D
+0308:  MOVLB  02
+0309:  CLRF   12
+030A:  CLRF   11
+030B:  CLRF   14
+030C:  CLRF   13
+030D:  MOVLW  65
+030E:  MOVLB  00
+030F:  MOVWF  22
+0310:  MOVLW  64
+0311:  MOVWF  23
+0312:  MOVLW  69
+0313:  MOVWF  24
+0314:  MOVLW  32
+0315:  MOVWF  25
+0316:  CLRF   26
+0317:  MOVLW  20
+0318:  MOVWF  21
+0319:  MOVLW  02
+031A:  MOVWF  20
+.................... {
+.................... 
+....................    Paciente pac;
+....................    pac.nombre="Melanie";
+031B:  MOVLW  4D
+031C:  MOVWF  56
+031D:  MOVLW  65
+031E:  MOVWF  57
+....................    pac.sexo='f';
+031F:  MOVLW  66
+0320:  MOVWF  58
+....................    pac.edad=20;
+0321:  MOVLW  14
+0322:  MOVWF  59
+....................    pac.fNac.dia=06;
+0323:  MOVLW  06
+0324:  MOVWF  5A
+....................    pac.fNac.mes=01;
+0325:  MOVLW  01
+0326:  MOVWF  5B
+....................    pac.fNac.ano=2002;
+0327:  MOVLW  D2
+0328:  MOVWF  5C
+....................   
+....................    for(int i=0;i<11;i++)
+0329:  CLRF   5D
+032A:  MOVF   5D,W
+032B:  SUBLW  0A
+032C:  BTFSS  03.0
+032D:  GOTO   36E
+....................    {
+....................       paquete[i].listening=i+1;
+032E:  RLF    5D,W
+032F:  MOVWF  77
+0330:  RLF    77,F
+0331:  MOVLW  FC
+0332:  ANDWF  77,F
+0333:  MOVF   77,W
+0334:  ADDLW  08
+0335:  MOVWF  04
+0336:  MOVLW  20
+0337:  MOVWF  05
+0338:  BTFSC  03.0
+0339:  INCF   05,F
+033A:  MOVLW  01
+033B:  ADDWF  5D,W
+033C:  MOVWF  00
+....................       paquete[i].freq=i+1;
+033D:  RLF    5D,W
+033E:  MOVWF  77
+033F:  RLF    77,F
+0340:  MOVLW  FC
+0341:  ANDWF  77,F
+0342:  MOVF   77,W
+0343:  ADDLW  01
+0344:  ADDLW  08
+0345:  MOVWF  04
+0346:  MOVLW  20
+0347:  MOVWF  05
+0348:  BTFSC  03.0
+0349:  INCF   05,F
+034A:  MOVLW  01
+034B:  ADDWF  5D,W
+034C:  MOVWF  00
+....................       paquete[i].dB=i+1;
+034D:  RLF    5D,W
+034E:  MOVWF  77
+034F:  RLF    77,F
+0350:  MOVLW  FC
+0351:  ANDWF  77,F
+0352:  MOVF   77,W
+0353:  ADDLW  02
+0354:  ADDLW  08
+0355:  MOVWF  04
+0356:  MOVLW  20
+0357:  MOVWF  05
+0358:  BTFSC  03.0
+0359:  INCF   05,F
+035A:  MOVLW  01
+035B:  ADDWF  5D,W
+035C:  MOVWF  00
+....................       paquete[i].ear=1;   
+035D:  RLF    5D,W
+035E:  MOVWF  77
+035F:  RLF    77,F
+0360:  MOVLW  FC
+0361:  ANDWF  77,F
+0362:  MOVF   77,W
+0363:  ADDLW  03
+0364:  ADDLW  08
+0365:  MOVWF  04
+0366:  MOVLW  20
+0367:  MOVWF  05
+0368:  BTFSC  03.0
+0369:  INCF   05,F
+036A:  MOVLW  01
+036B:  MOVWF  00
+036C:  INCF   5D,F
+036D:  GOTO   32A
+....................    }
+....................    
+....................    while(TRUE)
+....................    {
+....................       
+....................        transmitirDatos(&paquete, pac);
+036E:  MOVLW  20
+036F:  MOVWF  61
+0370:  MOVLW  08
+0371:  MOVWF  60
+0372:  MOVF   56,W
+0373:  MOVWF  62
+0374:  MOVF   57,W
+0375:  MOVWF  63
+0376:  MOVF   58,W
+0377:  MOVWF  64
+0378:  MOVF   59,W
+0379:  MOVWF  65
+037A:  MOVF   5A,W
+037B:  MOVWF  66
+037C:  MOVF   5B,W
+037D:  MOVWF  67
+037E:  MOVF   5C,W
+037F:  MOVWF  68
+0380:  GOTO   151
+....................        delay_ms(20);    
+0381:  MOVLW  14
+0382:  MOVWF  60
+0383:  GOTO   2E5
+0384:  GOTO   36E
+....................    
+....................       //TODO: User Code
+....................    }
+.................... 
+.................... }
+.................... 
+0385:  SLEEP
+.................... void transmitirDatos(sData* datos, Paciente pac)
+.................... {
+....................    printf("Nombre: %s Sexo: %c Fecha de nacimiento: %d/%d/%d  Edad: %d", *pac.nombre, pac.sexo, pac.fNac.dia, pac.fNac.mes, pac.fNac.ano, pac.edad);
+*
+0151:  MOVF   63,W
+0152:  MOVWF  7A
+0153:  MOVF   62,W
+0154:  MOVWF  04
+0155:  MOVF   7A,W
+0156:  MOVWF  05
+0157:  MOVF   00,W
+0158:  MOVWF  6A
+0159:  MOVLW  03
+015A:  MOVLB  03
+015B:  MOVWF  11
+015C:  MOVLW  00
+015D:  MOVWF  12
+015E:  BCF    03.0
+015F:  MOVLW  08
+0160:  MOVLB  00
+0161:  MOVWF  6F
+0162:  CALL   07D
+0163:  CLRF   05
+0164:  MOVF   6A,W
+0165:  MOVWF  04
+*
+0178:  MOVLW  08
+0179:  MOVLB  03
+017A:  MOVWF  11
+017B:  MOVLW  00
+017C:  MOVWF  12
+017D:  BCF    03.0
+017E:  MOVLW  07
+017F:  MOVLB  00
+0180:  MOVWF  6F
+0181:  CALL   07D
+0182:  MOVF   64,W
+0183:  MOVLB  01
+0184:  MOVWF  28
+0185:  MOVLB  00
+0186:  CALL   058
+0187:  MOVLW  0C
+0188:  MOVLB  03
+0189:  MOVWF  11
+018A:  MOVLW  00
+018B:  MOVWF  12
+018C:  BSF    03.0
+018D:  MOVLW  16
+018E:  MOVLB  00
+018F:  MOVWF  6F
+0190:  CALL   07D
+0191:  MOVF   66,W
+0192:  MOVWF  6F
+0193:  MOVLW  18
+0194:  MOVLB  01
+0195:  MOVWF  20
+0196:  MOVLB  00
+0197:  CALL   0E8
+0198:  MOVLW  2F
+0199:  MOVLB  01
+019A:  MOVWF  28
+019B:  MOVLB  00
+019C:  CALL   058
+019D:  MOVF   67,W
+019E:  MOVWF  6F
+019F:  MOVLW  18
+01A0:  MOVLB  01
+01A1:  MOVWF  20
+01A2:  MOVLB  00
+01A3:  CALL   0E8
+01A4:  MOVLW  2F
+01A5:  MOVLB  01
+01A6:  MOVWF  28
+01A7:  MOVLB  00
+01A8:  CALL   058
+01A9:  MOVF   68,W
+01AA:  MOVWF  6F
+01AB:  MOVLW  18
+01AC:  MOVLB  01
+01AD:  MOVWF  20
+01AE:  MOVLB  00
+01AF:  CALL   0E8
+01B0:  MOVLW  1B
+01B1:  MOVLB  03
+01B2:  MOVWF  11
+01B3:  MOVLW  00
+01B4:  MOVWF  12
+01B5:  BSF    03.0
+01B6:  MOVLW  08
+01B7:  MOVLB  00
+01B8:  MOVWF  6F
+01B9:  CALL   07D
+01BA:  MOVF   65,W
+01BB:  MOVWF  6F
+01BC:  MOVLW  18
+01BD:  MOVLB  01
+01BE:  MOVWF  20
+01BF:  MOVLB  00
+01C0:  CALL   0E8
+.................... 
+....................    for(int i=0;i<11;i++)
+01C1:  CLRF   69
+01C2:  MOVF   69,W
+01C3:  SUBLW  0A
+01C4:  BTFSS  03.0
+01C5:  GOTO   2E3
+....................    {
+....................    
+....................       if(datos[i].ear)
+01C6:  CLRF   7A
+01C7:  MOVF   69,W
+01C8:  MOVWF  79
+01C9:  RLF    79,W
+01CA:  MOVWF  6A
+01CB:  RLF    7A,W
+01CC:  MOVWF  6B
+01CD:  RLF    6A,F
+01CE:  RLF    6B,F
+01CF:  MOVLW  FC
+01D0:  ANDWF  6A,F
+01D1:  MOVLW  03
+01D2:  ADDWF  6A,W
+01D3:  MOVWF  78
+01D4:  MOVLW  00
+01D5:  ADDWFC 6B,W
+01D6:  MOVWF  7A
+01D7:  MOVF   78,W
+01D8:  ADDWF  60,W
+01D9:  MOVWF  04
+01DA:  MOVF   61,W
+01DB:  ADDWFC 7A,W
+01DC:  MOVWF  05
+01DD:  MOVF   00,F
+01DE:  BTFSC  03.2
+01DF:  GOTO   263
+....................          {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: derecha",datos[i].listening, datos[i].freq, datos[i].dB);}
+01E0:  CLRF   7A
+01E1:  MOVF   69,W
+01E2:  MOVWF  79
+01E3:  RLF    79,W
+01E4:  MOVWF  6A
+01E5:  RLF    7A,W
+01E6:  MOVWF  6B
+01E7:  RLF    6A,F
+01E8:  RLF    6B,F
+01E9:  MOVLW  FC
+01EA:  ANDWF  6A,F
+01EB:  MOVF   60,W
+01EC:  ADDWF  6A,W
+01ED:  MOVWF  04
+01EE:  MOVF   61,W
+01EF:  ADDWFC 6B,W
+01F0:  MOVWF  05
+01F1:  MOVF   00,W
+01F2:  MOVWF  6C
+01F3:  CLRF   7A
+01F4:  MOVF   69,W
+01F5:  MOVWF  79
+01F6:  RLF    79,W
+01F7:  MOVWF  6D
+01F8:  RLF    7A,W
+01F9:  MOVWF  6E
+01FA:  RLF    6D,F
+01FB:  RLF    6E,F
+01FC:  MOVLW  FC
+01FD:  ANDWF  6D,F
+01FE:  MOVLW  01
+01FF:  ADDWF  6D,W
+0200:  MOVWF  78
+0201:  MOVLW  00
+0202:  ADDWFC 6E,W
+0203:  MOVWF  7A
+0204:  MOVF   78,W
+0205:  ADDWF  60,W
+0206:  MOVWF  04
+0207:  MOVF   61,W
+0208:  ADDWFC 7A,W
+0209:  MOVWF  05
+020A:  MOVF   00,W
+020B:  MOVWF  6D
+020C:  CLRF   7A
+020D:  MOVF   69,W
+020E:  MOVWF  79
+020F:  RLF    79,W
+0210:  MOVWF  6E
+0211:  RLF    7A,W
+0212:  MOVWF  6F
+0213:  RLF    6E,F
+0214:  RLF    6F,F
+0215:  MOVLW  FC
+0216:  ANDWF  6E,F
+0217:  MOVLW  02
+0218:  ADDWF  6E,W
+0219:  MOVWF  78
+021A:  MOVLW  00
+021B:  ADDWFC 6F,W
+021C:  MOVWF  7A
+021D:  MOVF   78,W
+021E:  ADDWF  60,W
+021F:  MOVWF  04
+0220:  MOVF   61,W
+0221:  ADDWFC 7A,W
+0222:  MOVWF  05
+0223:  MOVF   00,W
+0224:  MOVWF  6E
+0225:  MOVLW  21
+0226:  MOVLB  03
+0227:  MOVWF  11
+0228:  MOVLW  00
+0229:  MOVWF  12
+022A:  BCF    03.0
+022B:  MOVLW  0B
+022C:  MOVLB  00
+022D:  MOVWF  6F
+022E:  CALL   07D
+022F:  MOVF   6C,W
+0230:  MOVWF  6F
+0231:  MOVLW  18
+0232:  MOVLB  01
+0233:  MOVWF  20
+0234:  MOVLB  00
+0235:  CALL   0E8
+0236:  MOVLW  27
+0237:  MOVLB  03
+0238:  MOVWF  11
+0239:  MOVLW  00
+023A:  MOVWF  12
+023B:  BSF    03.0
+023C:  MOVLW  0E
+023D:  MOVLB  00
+023E:  MOVWF  6F
+023F:  CALL   07D
+0240:  MOVF   6D,W
+0241:  MOVWF  6F
+0242:  MOVLW  18
+0243:  MOVLB  01
+0244:  MOVWF  20
+0245:  MOVLB  00
+0246:  CALL   0E8
+0247:  MOVLW  2F
+0248:  MOVLB  03
+0249:  MOVWF  11
+024A:  MOVLW  00
+024B:  MOVWF  12
+024C:  BSF    03.0
+024D:  MOVLW  06
+024E:  MOVLB  00
+024F:  MOVWF  6F
+0250:  CALL   07D
+0251:  MOVF   6E,W
+0252:  MOVWF  6F
+0253:  MOVLW  18
+0254:  MOVLB  01
+0255:  MOVWF  20
+0256:  MOVLB  00
+0257:  CALL   0E8
+0258:  MOVLW  33
+0259:  MOVLB  03
+025A:  MOVWF  11
+025B:  MOVLW  00
+025C:  MOVWF  12
+025D:  BSF    03.0
+025E:  MOVLW  10
+025F:  MOVLB  00
+0260:  MOVWF  6F
+0261:  CALL   07D
+0262:  GOTO   2E1
+....................       else
+....................          {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: izquierda", datos[i].listening, datos[i].freq, datos[i].dB);}
+0263:  CLRF   7A
+0264:  RLF    69,W
+0265:  MOVWF  6A
+0266:  RLF    7A,W
+0267:  MOVWF  6B
+0268:  RLF    6A,F
+0269:  RLF    6B,F
+026A:  MOVLW  FC
+026B:  ANDWF  6A,F
+026C:  MOVF   60,W
+026D:  ADDWF  6A,W
+026E:  MOVWF  04
+026F:  MOVF   61,W
+0270:  ADDWFC 6B,W
+0271:  MOVWF  05
+0272:  MOVF   00,W
+0273:  MOVWF  6C
+0274:  CLRF   7A
+0275:  RLF    69,W
+0276:  MOVWF  6D
+0277:  RLF    7A,W
+0278:  MOVWF  6E
+0279:  RLF    6D,F
+027A:  RLF    6E,F
+027B:  MOVLW  FC
+027C:  ANDWF  6D,F
+027D:  MOVLW  01
+027E:  ADDWF  6D,W
+027F:  MOVWF  78
+0280:  MOVLW  00
+0281:  ADDWFC 6E,W
+0282:  MOVWF  7A
+0283:  MOVF   78,W
+0284:  ADDWF  60,W
+0285:  MOVWF  04
+0286:  MOVF   61,W
+0287:  ADDWFC 7A,W
+0288:  MOVWF  05
+0289:  MOVF   00,W
+028A:  MOVWF  6D
+028B:  CLRF   7A
+028C:  MOVF   69,W
+028D:  MOVWF  79
+028E:  RLF    69,W
+028F:  MOVWF  6E
+0290:  RLF    7A,W
+0291:  MOVWF  6F
+0292:  RLF    6E,F
+0293:  RLF    6F,F
+0294:  MOVLW  FC
+0295:  ANDWF  6E,F
+0296:  MOVLW  02
+0297:  ADDWF  6E,W
+0298:  MOVWF  78
+0299:  MOVLW  00
+029A:  ADDWFC 6F,W
+029B:  MOVWF  7A
+029C:  MOVF   78,W
+029D:  ADDWF  60,W
+029E:  MOVWF  04
+029F:  MOVF   61,W
+02A0:  ADDWFC 7A,W
+02A1:  MOVWF  05
+02A2:  MOVF   00,W
+02A3:  MOVWF  6E
+02A4:  MOVLW  3C
+02A5:  MOVLB  03
+02A6:  MOVWF  11
+02A7:  MOVLW  00
+02A8:  MOVWF  12
+02A9:  BCF    03.0
+02AA:  MOVLW  0B
+02AB:  MOVLB  00
+02AC:  MOVWF  6F
+02AD:  CALL   07D
+02AE:  MOVF   6C,W
+02AF:  MOVWF  6F
+02B0:  MOVLW  18
+02B1:  MOVLB  01
+02B2:  MOVWF  20
+02B3:  MOVLB  00
+02B4:  CALL   0E8
+02B5:  MOVLW  42
+02B6:  MOVLB  03
+02B7:  MOVWF  11
+02B8:  MOVLW  00
+02B9:  MOVWF  12
+02BA:  BSF    03.0
+02BB:  MOVLW  0E
+02BC:  MOVLB  00
+02BD:  MOVWF  6F
+02BE:  CALL   07D
+02BF:  MOVF   6D,W
+02C0:  MOVWF  6F
+02C1:  MOVLW  18
+02C2:  MOVLB  01
+02C3:  MOVWF  20
+02C4:  MOVLB  00
+02C5:  CALL   0E8
+02C6:  MOVLW  4A
+02C7:  MOVLB  03
+02C8:  MOVWF  11
+02C9:  MOVLW  00
+02CA:  MOVWF  12
+02CB:  BSF    03.0
+02CC:  MOVLW  06
+02CD:  MOVLB  00
+02CE:  MOVWF  6F
+02CF:  CALL   07D
+02D0:  MOVF   6E,W
+02D1:  MOVWF  6F
+02D2:  MOVLW  18
+02D3:  MOVLB  01
+02D4:  MOVWF  20
+02D5:  MOVLB  00
+02D6:  CALL   0E8
+02D7:  MOVLW  4E
+02D8:  MOVLB  03
+02D9:  MOVWF  11
+02DA:  MOVLW  00
+02DB:  MOVWF  12
+02DC:  BSF    03.0
+02DD:  MOVLW  12
+02DE:  MOVLB  00
+02DF:  MOVWF  6F
+02E0:  CALL   07D
+02E1:  INCF   69,F
+02E2:  GOTO   1C2
+....................    }
+02E3:  MOVLP  00
+02E4:  GOTO   381 (RETURN)
+.................... 
+.................... }
+
+Configuration Fuses:
+   Word  1: 3FC4   INTRC_IO NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT NOCLKOUT IESO FCMEN
+   Word  2: 1EFF   NOWRT PLL_SW STVREN BORV19 NODEBUG NOLVP

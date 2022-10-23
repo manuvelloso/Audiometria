@@ -1,0 +1,649 @@
+CCS PCM C Compiler, Version 5.093, 4770               18-Oct-22 13:51
+
+               Filename:   M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\Comunicacion.lst
+
+               ROM used:   582 words (14%)
+                           Largest free fragment is 2048
+               RAM used:   48 (13%) at main() level
+                           82 (21%) worst case
+               Stack used: 2 locations
+               Stack size: 16
+
+0000:  MOVLP  00
+0001:  GOTO   234
+0002:  NOP
+.................... #include <16f1827.h>
+.................... //////////// Standard Header file for the PIC16F1827 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC16F1827
+0003:  DATA CC,34
+0004:  DATA 73,3A
+0005:  DATA 65,37
+0006:  DATA 69,37
+0007:  DATA 67,1D
+0008:  DATA A0,12
+0009:  DATA 64,16
+000A:  DATA 20,23
+000B:  DATA F2,32
+000C:  DATA E3,3A
+000D:  DATA 65,37
+000E:  DATA E3,34
+000F:  DATA 61,1D
+0010:  DATA A0,12
+0011:  DATA 64,16
+0012:  DATA 20,32
+0013:  DATA 42,1D
+0014:  DATA A0,12
+0015:  DATA 64,16
+0016:  DATA A0,37
+0017:  DATA F2,32
+0018:  DATA EA,30
+0019:  DATA 3A,10
+001A:  DATA E4,32
+001B:  DATA F2,32
+001C:  DATA 63,34
+001D:  DATA 61,00
+001E:  DATA CC,34
+001F:  DATA 73,3A
+0020:  DATA 65,37
+0021:  DATA 69,37
+0022:  DATA 67,1D
+0023:  DATA A0,12
+0024:  DATA 64,16
+0025:  DATA 20,23
+0026:  DATA F2,32
+0027:  DATA E3,3A
+0028:  DATA 65,37
+0029:  DATA E3,34
+002A:  DATA 61,1D
+002B:  DATA A0,12
+002C:  DATA 64,16
+002D:  DATA 20,32
+002E:  DATA 42,1D
+002F:  DATA A0,12
+0030:  DATA 64,16
+0031:  DATA A0,37
+0032:  DATA F2,32
+0033:  DATA EA,30
+0034:  DATA 3A,10
+0035:  DATA 69,3D
+0036:  DATA F1,3A
+0037:  DATA E9,32
+0038:  DATA 72,32
+0039:  DATA 61,00
+*
+0060:  MOVF   0B,W
+0061:  BCF    0B.7
+0062:  MOVLB  03
+0063:  BSF    15.7
+0064:  BSF    15.0
+0065:  NOP
+0066:  NOP
+0067:  BTFSC  09.7
+0068:  BSF    0B.7
+0069:  BTFSC  03.0
+006A:  GOTO   091
+006B:  MOVF   13,W
+006C:  ANDLW  7F
+006D:  MOVLB  00
+006E:  MOVWF  58
+006F:  MOVLB  03
+0070:  MOVF   11,W
+0071:  MOVLB  00
+0072:  MOVWF  59
+0073:  MOVLB  03
+0074:  MOVF   12,W
+0075:  MOVLB  00
+0076:  MOVWF  5A
+0077:  MOVF   58,W
+0078:  MOVWF  60
+0079:  CALL   03A
+007A:  MOVF   59,W
+007B:  MOVLB  03
+007C:  MOVWF  11
+007D:  MOVLB  00
+007E:  MOVF   5A,W
+007F:  MOVLB  03
+0080:  MOVWF  12
+0081:  MOVF   0B,W
+0082:  BCF    0B.7
+0083:  BSF    15.7
+0084:  BSF    15.0
+0085:  NOP
+0086:  NOP
+0087:  BTFSC  09.7
+0088:  BSF    0B.7
+0089:  MOVLB  00
+008A:  DECFSZ 57,F
+008B:  GOTO   08D
+008C:  GOTO   08F
+008D:  MOVLB  03
+008E:  GOTO   091
+008F:  GOTO   0AF
+0090:  MOVLB  03
+0091:  RLF    13,W
+0092:  RLF    14,W
+0093:  ANDLW  7F
+0094:  MOVLB  00
+0095:  MOVWF  58
+0096:  MOVLB  03
+0097:  MOVF   11,W
+0098:  MOVLB  00
+0099:  MOVWF  59
+009A:  MOVLB  03
+009B:  MOVF   12,W
+009C:  MOVLB  00
+009D:  MOVWF  5A
+009E:  MOVF   58,W
+009F:  MOVWF  60
+00A0:  CALL   03A
+00A1:  MOVF   59,W
+00A2:  MOVLB  03
+00A3:  MOVWF  11
+00A4:  MOVLB  00
+00A5:  MOVF   5A,W
+00A6:  MOVLB  03
+00A7:  MOVWF  12
+00A8:  INCF   11,F
+00A9:  BTFSC  03.2
+00AA:  INCF   12,F
+00AB:  BCF    03.0
+00AC:  MOVLB  00
+00AD:  DECFSZ 57,F
+00AE:  GOTO   060
+00AF:  RETURN
+00B0:  MOVF   61,W
+00B1:  CLRF   78
+00B2:  SUBWF  60,W
+00B3:  BTFSC  03.0
+00B4:  GOTO   0B8
+00B5:  MOVF   60,W
+00B6:  MOVWF  77
+00B7:  GOTO   0C4
+00B8:  CLRF   77
+00B9:  MOVLW  08
+00BA:  MOVWF  62
+00BB:  RLF    60,F
+00BC:  RLF    77,F
+00BD:  MOVF   61,W
+00BE:  SUBWF  77,W
+00BF:  BTFSC  03.0
+00C0:  MOVWF  77
+00C1:  RLF    78,F
+00C2:  DECFSZ 62,F
+00C3:  GOTO   0BB
+00C4:  RETURN
+00C5:  MOVLW  20
+00C6:  BTFSS  58.4
+00C7:  MOVLW  30
+00C8:  MOVWF  5C
+00C9:  MOVF   57,W
+00CA:  MOVWF  77
+00CB:  BTFSS  57.7
+00CC:  GOTO   0D5
+00CD:  COMF   77,F
+00CE:  INCF   77,F
+00CF:  MOVF   77,W
+00D0:  MOVWF  57
+00D1:  MOVLW  2D
+00D2:  MOVWF  5C
+00D3:  BSF    58.7
+00D4:  BSF    58.0
+00D5:  MOVF   57,W
+00D6:  MOVWF  60
+00D7:  MOVLW  64
+00D8:  MOVWF  61
+00D9:  CALL   0B0
+00DA:  MOVF   77,W
+00DB:  MOVWF  57
+00DC:  MOVLW  30
+00DD:  ADDWF  78,W
+00DE:  MOVWF  5D
+00DF:  MOVF   57,W
+00E0:  MOVWF  60
+00E1:  MOVLW  0A
+00E2:  MOVWF  61
+00E3:  CALL   0B0
+00E4:  MOVLW  30
+00E5:  ADDWF  77,W
+00E6:  MOVWF  5F
+00E7:  MOVLW  30
+00E8:  ADDWF  78,W
+00E9:  MOVWF  5E
+00EA:  MOVF   5C,W
+00EB:  MOVWF  77
+00EC:  MOVLW  30
+00ED:  SUBWF  5D,W
+00EE:  BTFSC  03.2
+00EF:  GOTO   0F4
+00F0:  BSF    58.1
+00F1:  BTFSC  58.7
+00F2:  BSF    58.2
+00F3:  GOTO   108
+00F4:  MOVF   5C,W
+00F5:  MOVWF  5D
+00F6:  MOVLW  20
+00F7:  MOVWF  5C
+00F8:  MOVLW  30
+00F9:  SUBWF  5E,W
+00FA:  BTFSC  03.2
+00FB:  GOTO   100
+00FC:  BSF    58.0
+00FD:  BTFSC  58.7
+00FE:  BSF    58.1
+00FF:  GOTO   108
+0100:  BTFSS  03.2
+0101:  BSF    58.0
+0102:  BTFSS  03.2
+0103:  GOTO   108
+0104:  MOVF   5D,W
+0105:  MOVWF  5E
+0106:  MOVLW  20
+0107:  MOVWF  5D
+0108:  BTFSC  58.2
+0109:  GOTO   10F
+010A:  BTFSC  58.1
+010B:  GOTO   112
+010C:  BTFSC  58.0
+010D:  GOTO   115
+010E:  GOTO   118
+010F:  MOVF   5C,W
+0110:  MOVWF  60
+0111:  CALL   03A
+0112:  MOVF   5D,W
+0113:  MOVWF  60
+0114:  CALL   03A
+0115:  MOVF   5E,W
+0116:  MOVWF  60
+0117:  CALL   03A
+0118:  MOVF   5F,W
+0119:  MOVWF  60
+011A:  CALL   03A
+011B:  RETURN
+.................... 
+.................... #list
+.................... 
+.................... #fuses XT,NOWDT,NOPROTECT,PUT //ordenes para el programador
+.................... #use delay (clock=4M)   // Fosc=8Mhz
+.................... #use RS232(BAUD=9600, XMIT=PIN_B5, parity=N)
+*
+003A:  MOVLB  01
+003B:  BCF    0D.5
+003C:  MOVLB  02
+003D:  BCF    0D.5
+003E:  MOVLW  08
+003F:  MOVWF  78
+0040:  GOTO   041
+0041:  NOP
+0042:  BSF    78.7
+0043:  GOTO   054
+0044:  BCF    78.7
+0045:  MOVLB  00
+0046:  RRF    60,F
+0047:  MOVLB  02
+0048:  BTFSC  03.0
+0049:  BSF    0D.5
+004A:  BTFSS  03.0
+004B:  BCF    0D.5
+004C:  BSF    78.6
+004D:  GOTO   054
+004E:  BCF    78.6
+004F:  DECFSZ 78,F
+0050:  GOTO   045
+0051:  GOTO   052
+0052:  NOP
+0053:  BSF    0D.5
+0054:  MOVLW  1B
+0055:  MOVWF  04
+0056:  DECFSZ 04,F
+0057:  GOTO   056
+0058:  GOTO   059
+0059:  NOP
+005A:  BTFSC  78.7
+005B:  GOTO   044
+005C:  BTFSC  78.6
+005D:  GOTO   04E
+005E:  MOVLB  00
+005F:  RETURN
+.................... //rx=b1
+.................... //en PC-> pin 2 es el pin receptor
+.................... 
+.................... 
+.................... typedef struct data{
+....................    
+....................    int listening;//1 si está escuchando  
+....................    int freq;   
+....................    int dB;   
+....................    int ear; //1 derecho
+.................... }sData;   
+.................... 
+.................... sData paquete[11];
+.................... 
+.................... void recibirDatos(sData* datos)
+.................... {
+.................... 
+....................    for(int i=0;i<11;i++)
+*
+011C:  CLRF   4E
+011D:  MOVF   4E,W
+011E:  SUBLW  0A
+011F:  BTFSS  03.0
+0120:  GOTO   232
+....................    {
+....................       if(datos[i].ear)
+0121:  CLRF   7A
+0122:  MOVF   4E,W
+0123:  MOVWF  79
+0124:  RLF    79,W
+0125:  MOVWF  52
+0126:  RLF    7A,W
+0127:  MOVWF  53
+0128:  RLF    52,F
+0129:  RLF    53,F
+012A:  MOVLW  FC
+012B:  ANDWF  52,F
+012C:  MOVLW  03
+012D:  ADDWF  52,W
+012E:  MOVWF  78
+012F:  MOVLW  00
+0130:  ADDWFC 53,W
+0131:  MOVWF  7A
+0132:  MOVF   78,W
+0133:  ADDWF  4C,W
+0134:  MOVWF  04
+0135:  MOVF   4D,W
+0136:  ADDWFC 7A,W
+0137:  MOVWF  05
+0138:  MOVF   00,F
+0139:  BTFSC  03.2
+013A:  GOTO   1B8
+....................          {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: derecha",datos[i].listening, datos[i].freq, datos[i].dB);}
+013B:  CLRF   7A
+013C:  MOVF   4E,W
+013D:  MOVWF  79
+013E:  RLF    79,W
+013F:  MOVWF  52
+0140:  RLF    7A,W
+0141:  MOVWF  53
+0142:  RLF    52,F
+0143:  RLF    53,F
+0144:  MOVLW  FC
+0145:  ANDWF  52,F
+0146:  MOVF   4C,W
+0147:  ADDWF  52,W
+0148:  MOVWF  04
+0149:  MOVF   4D,W
+014A:  ADDWFC 53,W
+014B:  MOVWF  05
+014C:  MOVF   00,W
+014D:  MOVWF  54
+014E:  CLRF   7A
+014F:  MOVF   4E,W
+0150:  MOVWF  79
+0151:  RLF    79,W
+0152:  MOVWF  55
+0153:  RLF    7A,W
+0154:  MOVWF  56
+0155:  RLF    55,F
+0156:  RLF    56,F
+0157:  MOVLW  FC
+0158:  ANDWF  55,F
+0159:  MOVLW  01
+015A:  ADDWF  55,W
+015B:  MOVWF  78
+015C:  MOVLW  00
+015D:  ADDWFC 56,W
+015E:  MOVWF  7A
+015F:  MOVF   78,W
+0160:  ADDWF  4C,W
+0161:  MOVWF  04
+0162:  MOVF   4D,W
+0163:  ADDWFC 7A,W
+0164:  MOVWF  05
+0165:  MOVF   00,W
+0166:  MOVWF  55
+0167:  CLRF   7A
+0168:  MOVF   4E,W
+0169:  MOVWF  79
+016A:  RLF    79,W
+016B:  MOVWF  56
+016C:  RLF    7A,W
+016D:  MOVWF  57
+016E:  RLF    56,F
+016F:  RLF    57,F
+0170:  MOVLW  FC
+0171:  ANDWF  56,F
+0172:  MOVLW  02
+0173:  ADDWF  56,W
+0174:  MOVWF  78
+0175:  MOVLW  00
+0176:  ADDWFC 57,W
+0177:  MOVWF  7A
+0178:  MOVF   78,W
+0179:  ADDWF  4C,W
+017A:  MOVWF  04
+017B:  MOVF   4D,W
+017C:  ADDWFC 7A,W
+017D:  MOVWF  05
+017E:  MOVF   00,W
+017F:  MOVWF  56
+0180:  MOVLW  03
+0181:  MOVLB  03
+0182:  MOVWF  11
+0183:  MOVLW  00
+0184:  MOVWF  12
+0185:  BCF    03.0
+0186:  MOVLW  0B
+0187:  MOVLB  00
+0188:  MOVWF  57
+0189:  CALL   060
+018A:  MOVF   54,W
+018B:  MOVWF  57
+018C:  MOVLW  18
+018D:  MOVWF  58
+018E:  CALL   0C5
+018F:  MOVLW  09
+0190:  MOVLB  03
+0191:  MOVWF  11
+0192:  MOVLW  00
+0193:  MOVWF  12
+0194:  BSF    03.0
+0195:  MOVLW  0E
+0196:  MOVLB  00
+0197:  MOVWF  57
+0198:  CALL   060
+0199:  MOVF   55,W
+019A:  MOVWF  57
+019B:  MOVLW  18
+019C:  MOVWF  58
+019D:  CALL   0C5
+019E:  MOVLW  11
+019F:  MOVLB  03
+01A0:  MOVWF  11
+01A1:  MOVLW  00
+01A2:  MOVWF  12
+01A3:  BSF    03.0
+01A4:  MOVLW  06
+01A5:  MOVLB  00
+01A6:  MOVWF  57
+01A7:  CALL   060
+01A8:  MOVF   56,W
+01A9:  MOVWF  57
+01AA:  MOVLW  18
+01AB:  MOVWF  58
+01AC:  CALL   0C5
+01AD:  MOVLW  15
+01AE:  MOVLB  03
+01AF:  MOVWF  11
+01B0:  MOVLW  00
+01B1:  MOVWF  12
+01B2:  BSF    03.0
+01B3:  MOVLW  10
+01B4:  MOVLB  00
+01B5:  MOVWF  57
+01B6:  CALL   060
+01B7:  GOTO   230
+....................       else
+....................          {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: izquierda", datos[i].listening, datos[i].freq, datos[i].dB);}
+01B8:  CLRF   7A
+01B9:  RLF    4E,W
+01BA:  MOVWF  52
+01BB:  RLF    7A,W
+01BC:  MOVWF  53
+01BD:  RLF    52,F
+01BE:  RLF    53,F
+01BF:  MOVLW  FC
+01C0:  ANDWF  52,F
+01C1:  MOVF   4C,W
+01C2:  ADDWF  52,W
+01C3:  MOVWF  04
+01C4:  MOVF   4D,W
+01C5:  ADDWFC 53,W
+01C6:  MOVWF  05
+01C7:  MOVF   00,W
+01C8:  MOVWF  54
+01C9:  CLRF   7A
+01CA:  RLF    4E,W
+01CB:  MOVWF  55
+01CC:  RLF    7A,W
+01CD:  MOVWF  56
+01CE:  RLF    55,F
+01CF:  RLF    56,F
+01D0:  MOVLW  FC
+01D1:  ANDWF  55,F
+01D2:  MOVLW  01
+01D3:  ADDWF  55,W
+01D4:  MOVWF  78
+01D5:  MOVLW  00
+01D6:  ADDWFC 56,W
+01D7:  MOVWF  7A
+01D8:  MOVF   78,W
+01D9:  ADDWF  4C,W
+01DA:  MOVWF  04
+01DB:  MOVF   4D,W
+01DC:  ADDWFC 7A,W
+01DD:  MOVWF  05
+01DE:  MOVF   00,W
+01DF:  MOVWF  55
+01E0:  CLRF   7A
+01E1:  MOVF   4E,W
+01E2:  MOVWF  79
+01E3:  RLF    4E,W
+01E4:  MOVWF  56
+01E5:  RLF    7A,W
+01E6:  MOVWF  57
+01E7:  RLF    56,F
+01E8:  RLF    57,F
+01E9:  MOVLW  FC
+01EA:  ANDWF  56,F
+01EB:  MOVLW  02
+01EC:  ADDWF  56,W
+01ED:  MOVWF  78
+01EE:  MOVLW  00
+01EF:  ADDWFC 57,W
+01F0:  MOVWF  7A
+01F1:  MOVF   78,W
+01F2:  ADDWF  4C,W
+01F3:  MOVWF  04
+01F4:  MOVF   4D,W
+01F5:  ADDWFC 7A,W
+01F6:  MOVWF  05
+01F7:  MOVF   00,W
+01F8:  MOVWF  56
+01F9:  MOVLW  1E
+01FA:  MOVLB  03
+01FB:  MOVWF  11
+01FC:  MOVLW  00
+01FD:  MOVWF  12
+01FE:  BCF    03.0
+01FF:  MOVLW  0B
+0200:  MOVLB  00
+0201:  MOVWF  57
+0202:  CALL   060
+0203:  MOVF   54,W
+0204:  MOVWF  57
+0205:  MOVLW  18
+0206:  MOVWF  58
+0207:  CALL   0C5
+0208:  MOVLW  24
+0209:  MOVLB  03
+020A:  MOVWF  11
+020B:  MOVLW  00
+020C:  MOVWF  12
+020D:  BSF    03.0
+020E:  MOVLW  0E
+020F:  MOVLB  00
+0210:  MOVWF  57
+0211:  CALL   060
+0212:  MOVF   55,W
+0213:  MOVWF  57
+0214:  MOVLW  18
+0215:  MOVWF  58
+0216:  CALL   0C5
+0217:  MOVLW  2C
+0218:  MOVLB  03
+0219:  MOVWF  11
+021A:  MOVLW  00
+021B:  MOVWF  12
+021C:  BSF    03.0
+021D:  MOVLW  06
+021E:  MOVLB  00
+021F:  MOVWF  57
+0220:  CALL   060
+0221:  MOVF   56,W
+0222:  MOVWF  57
+0223:  MOVLW  18
+0224:  MOVWF  58
+0225:  CALL   0C5
+0226:  MOVLW  30
+0227:  MOVLB  03
+0228:  MOVWF  11
+0229:  MOVLW  00
+022A:  MOVWF  12
+022B:  BSF    03.0
+022C:  MOVLW  12
+022D:  MOVLB  00
+022E:  MOVWF  57
+022F:  CALL   060
+0230:  INCF   4E,F
+0231:  GOTO   11D
+....................    }
+0232:  MOVLP  00
+0233:  GOTO   245 (RETURN)
+.................... 
+.................... }
+.................... 
+.................... void main()
+0234:  MOVLB  01
+0235:  BCF    0D.5
+0236:  MOVLB  02
+0237:  BSF    0D.5
+0238:  MOVLB  03
+0239:  CLRF   0C
+023A:  CLRF   0D
+023B:  MOVLB  02
+023C:  CLRF   12
+023D:  CLRF   11
+023E:  CLRF   14
+023F:  CLRF   13
+.................... {
+....................    recibirDatos(paquete);
+0240:  MOVLW  20
+0241:  MOVLB  00
+0242:  MOVWF  4D
+0243:  CLRF   4C
+0244:  GOTO   11C
+.................... }
+0245:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3FC1   XT NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT NOCLKOUT IESO FCMEN
+   Word  2: 1FFF   NOWRT PLL STVREN BORV19 NODEBUG NOLVP

@@ -1,0 +1,21 @@
+#include <16f1827.h>
+#fuses XT,NOWDT,NOPROTECT,PUT //ordenes para el programador
+#use delay (clock=4M)   // Fosc=8Mhz
+#use RS232(BAUD=9600, XMIT=PIN_B5, parity=N)
+//rx=b1
+
+typedef struct data{   
+int listenig;//1 si está escuchando  
+int freq;   
+int dB;   
+int ear; //1 derecho
+}sData;
+
+   sData paquete[11];
+
+void recibirDatos(Data* datos)
+{
+
+
+
+}

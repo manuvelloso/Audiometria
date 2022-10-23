@@ -1,0 +1,60 @@
+CCS PCM C Compiler, Version 5.093, 4770               20-Oct-22 14:06
+
+               Filename:   M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\PC_receptor.lst
+
+               ROM used:   13 words (0%)
+                           Largest free fragment is 2048
+               RAM used:   4 (1%) at main() level
+                           15 (4%) worst case
+               Stack used: 0 locations
+               Stack size: 16
+
+0000:  MOVLP  00
+0001:  GOTO   003
+0002:  NOP
+.................... #include <PC_receptor.h>
+.................... #include <16F1827.h>
+.................... //////////// Standard Header file for the PIC16F1827 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC16F1827
+.................... 
+.................... #list
+.................... 
+.................... #device ADC=10
+.................... //#use delay(clock=4,crystal=4MHz)
+.................... 
+.................... 
+.................... 
+.................... void main()
+0003:  MOVLB  03
+0004:  CLRF   0C
+0005:  CLRF   0D
+0006:  MOVLB  02
+0007:  CLRF   12
+0008:  CLRF   11
+0009:  CLRF   14
+000A:  CLRF   13
+.................... {
+.................... 
+.................... 	while(TRUE)
+.................... 	{
+000B:  GOTO   00B
+.................... 
+.................... 
+.................... 		//TODO: User Code
+.................... 	}
+.................... 
+.................... }
+000C:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3FC7   ECH NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT NOCLKOUT IESO FCMEN
+   Word  2: 1FFF   NOWRT PLL STVREN BORV19 NODEBUG NOLVP

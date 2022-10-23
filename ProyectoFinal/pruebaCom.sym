@@ -1,0 +1,114 @@
+004-005 @WRITE_PACKED_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @READ_PACKED_MEMORY.P3
+004-005 @READ_PROGRAM_MEMORY8.P4
+006-007 @WRITE_PACKED_MEMORY.P1
+006-007 @READ_PACKED_MEMORY.P2
+020-021 cadena
+022-026 @STRING745
+028-053 paquete
+054-055 @sprintf_string
+056-05C main.pac
+05D     main.i
+060     @delay_ms1.P1
+060-061 transmitirDatos.datos
+060     main.@SCRATCH1
+061     main.@SCRATCH2
+062-068 transmitirDatos.pac
+062     main.@SCRATCH3
+063     main.@SCRATCH4
+069     transmitirDatos.i
+06A     transmitirDatos.@SCRATCH1
+06B     transmitirDatos.@SCRATCH2
+06C     transmitirDatos.@SCRATCH3
+06C     @PSTRINGR_721.@SCRATCH1
+06D     transmitirDatos.@SCRATCH4
+06D     @PSTRINGR_721.@SCRATCH2
+06E     transmitirDatos.@SCRATCH5
+06F     @PRINTF_D_721.P1
+06F     @PSTRINGCN7_721.P2
+06F     transmitirDatos.@SCRATCH6
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+0A0     @PRINTF_D_721.P1
+0A2     @PSTRINGCN7_721.@SCRATCH1
+0A3     @PSTRINGCN7_721.@SCRATCH2
+0A4     @PSTRINGCN7_721.@SCRATCH3
+0A4     @PRINTF_D_721.@SCRATCH1
+0A5     @PRINTF_D_721.@SCRATCH2
+0A6     @PRINTF_D_721.@SCRATCH3
+0A7     @PRINTF_D_721.@SCRATCH4
+0A8     @DIV88.P1
+0A8     @PUTCHAR_1_.P2
+0A9     @DIV88.P1
+0AA     @DIV88.@SCRATCH1
+111.6   C1OUT
+113.6   C2OUT
+191-192 @WRITE_PROGRAM_MEMORY8.P1
+191-192 @READ_PROGRAM_MEMORY8.P2
+291     CCP_1_LOW
+291     CCP_1
+292     CCP_1_HIGH
+298     CCP_2
+298     CCP_2_LOW
+299     CCP_2_HIGH
+311     CCP_3_LOW
+311     CCP_3
+312     CCP_3_HIGH
+318     CCP_4_LOW
+318     CCP_4
+319     CCP_4_HIGH
+
+ROM Allocation:
+000003  @const756.call
+000021  @const770.call
+00003C  @const771.call
+000058  @PUTCHAR_1_
+00007D  @PSTRINGCN7_721
+0000D1  @DIV88
+0000E8  @PRINTF_D_721
+000151  transmitirDatos
+000166  @PSTRINGR_721
+0002E5  @delay_ms1
+0002FC  @cinit1
+0002FC  main
+00030D  @cinit2
+
+Project Directory:
+    M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\
+
+Project Files:
+    pruebaCom.c                                             [20-Oct-22 15:44  CRC=C050EC52]
+    C:\Program Files (x86)\PICC\Devices\16f1827.h           [21-Feb-20 15:48  CRC=D6A5AF9F]
+
+Source signature=6D9C4B90
+Program memory checksum=0000
+Hex file CRC=2417
+
+Units:
+    M:\Favaloro\3er AÑO\2 CUATRIMESTRE\EDI2\ProyectoFinal\pruebaCom (main)
+
+Compiler Settings:
+    Processor:      PIC16F1827
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   pruebaCom.xsym
+    Errors:      pruebaCom.err
+    Ext Symbols: pruebaCom.esym
+    INHX8:       pruebaCom.hex
+    Symbols:     pruebaCom.sym
+    List:        pruebaCom.lst
+    Debug/COFF:  pruebaCom.cof
+    Project:     pruebaCom.ccspjt
+    Call Tree:   pruebaCom.tre
+    Statistics:  pruebaCom.STA
