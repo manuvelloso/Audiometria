@@ -57,6 +57,8 @@ void Enviar_Senal() {
    set_timer1(N_tmr1);
    
    output_high(PIN_A7); //pin de salida de la patita
+   
+   vol = 0b1000;
 }
 
 void Finalizar() {
