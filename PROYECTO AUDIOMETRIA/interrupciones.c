@@ -13,7 +13,7 @@ void TIMER0_isr() {
   contador_tmr0++;
    if (contador_tmr0 == 6) {
       
-      contador_tmr0 = 0; // Incremento el contador
+      contador_tmr0 = 0; 
       
       if(vol == 0b1111) { // Si llegó al último volumen
          lista[pos_frec].listening = 0; // No escucho?
