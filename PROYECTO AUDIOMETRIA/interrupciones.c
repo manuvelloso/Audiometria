@@ -12,9 +12,18 @@ void TIMER1_isr() {
 void TIMER0_isr() {
   contador_tmr0++;
    if (contador_tmr0 == 6) {
-      lista[pos_frec].listening = 0; // No escuch?
+      
       contador_tmr0 = 0;
-      nueva_frec = 1;
+      
+      //Aumento el volumen
+      vol = vol + 0b0001;
+      
+      if(vol == 0b1111) // Si llegó al último volumen
+      {
+         lista[pos_frec].listening = 0; // No escucho?
+         nueva_frec = 1;
+      }
+      
    }
 }
 
@@ -22,6 +31,7 @@ void TIMER0_isr() {
 #int_ext
 void ext_isr() {
    lista[pos_frec].listening = 1; // Se escuchó?
+   lista[pos_frec].volumen = vol;
    disable_interrupts(int_TIMER0);
    nueva_frec = 1;
 }
