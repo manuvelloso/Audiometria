@@ -2,7 +2,7 @@
 #include <globals.h>
 #fuses XT,NOWDT,NOPROTECT,PUT //ordenes para el programador
 #use delay (clock=4M)   // Fosc=8Mhz
-#use RS232(BAUD=4800, XMIT=PIN_B5, parity=N)
+#use RS232(BAUD=4800, XMIT=PIN_A0, parity=N)
 //rx=b1
 //en PC-> pin 2 es el pin receptor
 
