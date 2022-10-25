@@ -15,13 +15,14 @@ void TIMER0_isr() {
       
       contador_tmr0 = 0;
       
-      //Aumento el volumen
-      vol = vol + 0b0001;
       
-      if(vol == 0b1111) // Si llegó al último volumen
-      {
+      
+      if(vol == 0b1111) { // Si llegó al último volumen
          lista[pos_frec].listening = 0; // No escucho?
          nueva_frec = 1;
+      } else {
+         //Aumento el volumen
+         vol = vol + 0b0001;  
       }
       
    }
