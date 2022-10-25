@@ -30,7 +30,7 @@ void TIMER0_isr() {
 #int_ext
 void ext_isr() {
    lista[pos_frec].listening = 1; // Se escuchó?
-   lista[pos_frec].volumen = vol;
+   lista[pos_frec].dB = vol; // Hay que hacer la cuenta
    disable_interrupts(int_TIMER0);
    nueva_frec = 1;
 }
