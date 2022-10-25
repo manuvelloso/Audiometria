@@ -1,9 +1,9 @@
 #include <globals.h>
 
-// Interrupción de timer1 la utilizamos para generar la señal cuadrada en el pin B7
+// Interrupción de timer1 la utilizamos para generar la señal cuadrada en el pin A7
 #int_TIMER1
 void TIMER1_isr() {
-   output_toggle(PIN_B7);
+   output_toggle(PIN_A7);
    set_timer1(N_tmr1);
 }
 
@@ -21,7 +21,7 @@ void TIMER0_isr() {
 // Interrupción externa RB0 la utilizamos para registrar el PULSADO/ ESCUCHO al presionar el boton en RB0
 #int_ext
 void ext_isr() {
-   lista[pos_frec].listening = 1; // S? escuch?
+   lista[pos_frec].listening = 1; // Se escuchó?
    disable_interrupts(int_TIMER0);
    nueva_frec = 1;
 }
