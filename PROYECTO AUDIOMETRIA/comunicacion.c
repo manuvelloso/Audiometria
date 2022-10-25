@@ -9,7 +9,7 @@
 typedef struct fecha{
    int dia;
    int mes;
-   int ano;
+   long int ano;
    }Fecha;
 
 typedef struct paciente{
@@ -31,20 +31,21 @@ sData paquete[11];
 
 void transmitirDatos(sData* datos, Paciente pac)
 {
-   //printf("\f");
-   //printf("Hola");
- 
-   printf("Nombre: %s Sexo: %c Fecha de nacimiento: %d/%d/%d  Edad: %d", *pac.nombre, pac.sexo, pac.fNac.dia, pac.fNac.mes, pac.fNac.ano, pac.edad);
-
+     printf("Nombre: %s \r\nSexo: %c \r\nFecha de nacimiento: %d/%d/%ld  \r\nEdad: %d\r\n ", *pac.nombre, pac.sexo, pac.fNac.dia, pac.fNac.mes, pac.fNac.ano, pac.edad);
+   printf("\r\n--------------------------------\r\n");
+   delay_ms(1000);
+   
    for(int i=0;i<11;i++)
    {
    
       if(datos[i].ear)
-         {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: derecha",datos[i].listening, datos[i].freq, datos[i].dB);}
+         {printf("-Listening: %d \r\n-Frecuencia: %d \r\n-dB: %d\r\n-Oreja: derecha \r\n",datos[i].listening, datos[i].freq, datos[i].dB);
+         delay_ms(1000);
+         }
       else
-         {printf("Listening: %d, Frecuencia: %d, dB: %d, oreja: izquierda", datos[i].listening, datos[i].freq, datos[i].dB);}
-   }
-
+         {printf("-Listening: %d \r\n-Frecuencia: %d \r\n-dB: %d \r\n-oreja: izquierda", datos[i].listening, datos[i].freq, datos[i].dB);
+           delay_ms(1000);
+         }
 }
 
 void main()
