@@ -1,19 +1,19 @@
 #include <globals.h>
 
 // Interrupción de timer1 la utilizamos para generar la señal cuadrada en el pin A7
-#int_TIMER1
-void TIMER1_isr() {
+#int_TIMER0
+void TIMER0_isr() {
    output_toggle(PIN_A7);
-   set_timer1(N_tmr1);
+   set_timer0(N_tmr0);
 }
 
 // Interrupción de timer0 la utilizamos para registrar el NO PULSADO/ NO ESCUCHO
-#int_TIMER0
-void TIMER0_isr() {
-  contador_tmr0++;
-   if (contador_tmr0 == 6) {
+#int_TIMER1
+void TIMER1_isr() {
+  contador_tmr1++;
+   if (contador_tmr1 == 6) {
       
-      contador_tmr0 = 0; 
+      contador_tmr1 = 0; 
       
       if(vol == 0b1111) { // Si llegó al último volumen
          lista[pos_frec].listening = 0; // No escucho?
@@ -31,7 +31,7 @@ void TIMER0_isr() {
 void ext_isr() {
    lista[pos_frec].listening = 1; // Se escuchó?
    lista[pos_frec].dB = vol; // Hay que hacer la cuenta
-   disable_interrupts(int_TIMER0);
+   disable_interrupts(int_TIMER1);
    nueva_frec = 1;
 }
 
