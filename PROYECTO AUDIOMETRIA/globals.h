@@ -9,7 +9,7 @@
 #BYTE TRISB = 0x86
 #BYTE PORTA = 0x05
 
-#define N_tmr1 28036 //Se calculó el N_tmr1 para 3 segundos
+#define N_tmr1 28036 //Se calculó el N_tmr0 para 3 segundos
 #define N 12
 
 // Vector de frecuancias
