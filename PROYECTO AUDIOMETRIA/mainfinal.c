@@ -3,9 +3,9 @@
 void main() {
    
    // Seteo de los timers con Prescaler = 256
-   setup_timer_1(RTCC_INTERNAL | RTCC_DIV_256);
+   setup_timer_1 ( T1_INTERNAL | T1_DIV_BY_8 );
    setup_timer_0(RTCC_INTERNAL | RTCC_DIV_256);
-
+   
    // Seteo de entradas analógicas
    setup_adc_ports(ALL_ANALOG);
    setup_adc(ADC_CLOCK_INTERNAL);
