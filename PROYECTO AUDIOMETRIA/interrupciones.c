@@ -11,21 +11,35 @@ void TIMER0_isr() {
 // Interrupción de timer0 la utilizamos para registrar el NO PULSADO/ NO ESCUCHO
 #int_TIMER1
 void TIMER1_isr() {
-  contador_tmr1++;
-   if (contador_tmr1 == 6) {
+
+   contador_tmr1--;          //Se decrementa hasta llegar a cero
+   set_timer1(28036);//Carga de nuevo el timer1
+   if (contador_tmr1 <= 0) // Si llega a cero, se cumplió el periodo de muestreo
+   {
+      // Antes de que llegue al ultimo volumen:
+      int masc = input(PIN_A3);
+      masc << 3;
       
-      contador_tmr1 = 0; 
+      porta = vol + masc;
       
-      if(vol == 0b1111) { // Si llegó al último volumen
+      contador_tmr1 = 10;  // Inicializa el contador para el próximo periodo
+   }
+      
+      if(vol == 0x08) { // Si llegó al último volumen
          lista[pos_frec].listening = 0; // No escucho?
-         nueva_frec = 1;
+         vol = 0x00;
+        // nueva_frec = 1;
       } else {
          //Aumento el volumen
-         vol = vol + 0b0001;  
+         vol++;  
       }
       
-   }
 }
+
+
+
+
+
 
 // Interrupción externa RB0 la utilizamos para registrar el PULSADO/ ESCUCHO al presionar el boton en RB0
 #int_ext
