@@ -18,8 +18,8 @@ int FrecuenciasARegistrar[N] = { 125, 250, 500, 750, 1000, 1500, 2000, 3000, 400
 int Frecuencia = FrecuenciasARegistrar[0]; // Frecuencia inicializada en 125
 
 // Variables globales
-int N_tmr0 = 0;         // Valor que toma el tmr1
-int contador_tmr1 = 0;  // Para realizar ciclos de repetici?n en el tmr1
+int N_tmr0 = 0;         // Valor que toma el tmr0
+int contador_tmr1 = 10;  // Para realizar ciclos de repetici?n en el tmr1
 int pos_frec = 0;       // Indica la posicion "actual" en la lista sDatos y FrecuenciasARegistrar
 int nueva_frec = 0;     // Booleano para ver si termino la frecuencia de registro
 int terminarMenu = 0;
