@@ -7,6 +7,7 @@ void TIMER0_isr() {
    set_timer0(N_tmr0);
 }
 
+
 // Interrupción de timer0 la utilizamos para registrar el NO PULSADO/ NO ESCUCHO
 #int_TIMER1
 void TIMER1_isr() {
@@ -29,10 +30,20 @@ void TIMER1_isr() {
 // Interrupción externa RB0 la utilizamos para registrar el PULSADO/ ESCUCHO al presionar el boton en RB0
 #int_ext
 void ext_isr() {
-   lista[pos_frec].listening = 1; // Se escuchó?
-   lista[pos_frec].dB = vol; // Hay que hacer la cuenta
-   disable_interrupts(int_TIMER1);
-   nueva_frec = 1;
+   
+   if(input(PIN_B0)) {
+      lista[pos_frec].listening = 1; // Se escuchó?
+      lista[pos_frec].dB = vol; // Hay que hacer la cuenta
+      disable_interrupts(int_TIMER1);
+      nueva_frec = 1; // Cambiamos de frecuencia
+      
+      i = 0x00; // Volumen inicial
+      porta = 0x00; // Para que deje de sonar
+      delay_ms(500); // Por un cachito de tiempo
+   }
+   
+   
+   
 }
 
 // aca hay que poner una variable para que se interrumpa con el boton de rb4 a rb7
