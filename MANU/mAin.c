@@ -1,4 +1,4 @@
-#include <mAin.h>
+#include <A.h>
 
 void main()
 {
@@ -30,15 +30,19 @@ do {
       set_timer1(N_tmr1);
       
        // Habilitamos interrupciones
-      enable_interrupts(int_ext);      // Interrupción externa RB0
-      //Ext_int_edge(H_to_L); 
       enable_interrupts(int_TIMER1);   // Interrupción de timer0
       enable_interrupts(int_TIMER0);   // Interrupcion de timer1
+      enable_interrupts(int_ext);      // Interrupción externa RB0
+      //Ext_int_edge(H_to_L); 
       enable_interrupts(GLOBAL);       // Llave maestra
 
-      while (!nueva_frec){};
-         
+      while (!nueva_frec){
+      };
+      
       i++;
  
    } while (Frecuencia != 8000);
+   
+   delay_ms(100);
+   //transmitirDatos();
 }
