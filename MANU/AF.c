@@ -43,7 +43,7 @@ void Menu()
 
 void Seteo_Senal() {
    // Se calcula N_tmr1 mediante la ecuación T = 4/fosc * 256 * (256 - N_tmr1), prescaler = 256
-   float T0 = 1 / Frecuencia; // Periodo
+   float T0 = 1 / (float)Frecuencia; // Periodo
    float T = T0 / 2; // Subperiodo
    N_tmr0 = 256 - (T * 4000000 / (4 * 256));
    vol = 0x00;
