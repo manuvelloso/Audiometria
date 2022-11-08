@@ -40,6 +40,7 @@ do {
       };
       
       i++;
+      pos_frec++;
  
    } while (Frecuencia != 8000);
    
