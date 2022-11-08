@@ -52,21 +52,14 @@ void Seteo_Senal() {
 
 void transmitirDatos()
 {
-   
-  // printf("\f");
-   //printf("\r\n--------------------------------\r\n");
-   printf("\r\n -Listening: %d \r\n -Frecuencia: %ld \r\n -dB: %d", lista[pos_frec].listening,lista[pos_frec].freq, lista[pos_frec].dB);
-   /*for(int i=0;i<11;i++)
+   printf("FINAL\f");
+   printf("\f");
+   //printf("Listening: 1 \r\n -Frecuencia: %ld \r\n -dB: %d",lista[pos_frec].freq, lista[pos_frec].dB);
+   for(int i=0;i<11;i++)
    {
-   
-      //if(datos[i].ear)
          printf("\r\n--------------------------------\r\n");
          printf("-Listening: %d \r\n-Frecuencia: %ld \r\n-dB: %d",lista[i].listening, lista[i].freq, lista[i].dB);
          
          delay_ms(1000);
-   }   
-      else
-         {printf("-Listening: %d \r\n-Frecuencia: %ld \r\n-dB: %d \r\n-oreja: izquierda", lista[i].listening, lista[i].freq, lista[i].dB);
-           delay_ms(1000);
-         }*/
+   }
 }
