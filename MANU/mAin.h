@@ -57,9 +57,7 @@ void TIMER1_isr() {
       
       nueva_frec = 1;//camviofrecporqueñoescucho
       
-      //printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
-       printf(lcd_putc, "\fTMR0=%d",N_tmr0);
-      transmitirDatos();
+      printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
    } else {
       vol++;  //Aumento el volumen
    }
@@ -86,9 +84,7 @@ void ext_isr() {
    
    nueva_frec = 1;
    printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
-   //printf(lcd_putc, "\fTMR0=%d",N_tmr0);
-   
-   transmitirDatos();
+
    vol=0;
    }
 }
