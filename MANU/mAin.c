@@ -16,10 +16,10 @@ void main()
    Menu();
    printf(lcd_putc, "\fLISTO");
    
-   set_tris_b(0xff);//parausarelutto
+   set_tris_b(0xff);
 
 do {
-      set_tris_b(0xff);//parausarelutto
+      set_tris_b(0xff);
       Frecuencia = FrecuenciasARegistrar[i];
       
       // Seteo de timer1 según la frecuencia de análisis
@@ -45,5 +45,5 @@ do {
    } while (Frecuencia != 8000);
    
    delay_ms(100);
-   //transmitirDatos();
+   transmitirDatos();
 }
