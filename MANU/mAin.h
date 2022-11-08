@@ -13,7 +13,7 @@
 #define N 11
 
 // Vector de frecuancias
-long int FrecuenciasARegistrar[N] = { 125, 250, 500, 750, 1000, 1500, 2000, 3000, 4000, 6000, 8000 };
+long int FrecuenciasARegistrar[N] = { 125,250, 500, 750, 1000, 1500, 2000, 3000, 4000, 6000, 8000 };
 
 long int Frecuencia = FrecuenciasARegistrar[0]; // Frecuencia inicializada en 125
 
@@ -57,7 +57,8 @@ void TIMER1_isr() {
       
       nueva_frec = 1;//camviofrecporqueñoescucho
       
-      printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
+      //printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
+       printf(lcd_putc, "\fTMR0=%d",N_tmr0);
       transmitirDatos();
    } else {
       vol++;  //Aumento el volumen
@@ -69,6 +70,7 @@ void TIMER1_isr() {
 void TIMER0_isr() {
    output_toggle(PIN_A4);
    set_timer0(N_tmr0);
+   
 }
 
 #int_ext
@@ -84,7 +86,7 @@ void ext_isr() {
    
    nueva_frec = 1;
    printf(lcd_putc, "\ffrec=%ld vol=%d",lista[pos_frec].freq,lista[pos_frec].dB);
-   
+   //printf(lcd_putc, "\fTMR0=%d",N_tmr0);
    
    transmitirDatos();
    vol=0;
